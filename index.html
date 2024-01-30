@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>ad free yt</title>
+</head>
+<body>
+    <div class="main"> 
+        <div class="note-div">
+        <p class = "notes1">AD-free YouTube videos player.
+            Paste youtube video link and click " > " </p>
+
+        <div class="input-div">
+            <input class="search-box" id="searchInput" placeholder="paste link...">
+
+            <button class="go-button" onclick="updateIframe()">
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+            </button>
+        </div>
+        <p class = "notes">Fork it on my GitHub</p>
+            <a href="https://github.com/manov-ik/ad-free-yt" target="_blank" ><img class="github-img" src="github-logo.png"></a>
+        </div>
+        <div class="vid-div">
+            <iframe id="videoIframe" allowfullscreen >
+                Your browser does not support the iframe tag.
+            </iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
