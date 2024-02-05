@@ -9,7 +9,7 @@ Ad-Free YouTube Player is a project that utilizes the embedded format of YouTube
 ## How to Use
 
 1. Download the zip file of this repository and extract it.
-2. Open the 'index.html' file and paste the YouTube link into the 'paste link' section on the page. Then, click '>' .
+2. Open the 'index.html' file and paste the YouTube link into the 'paste link' section on the page. Then, click '>' or hit enter .
 3. The video will appear on the screen. Simply click 'Play' and that's it!
 
 ## How it Works ?
