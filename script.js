@@ -1,12 +1,17 @@
-function updateIframe() {
-    var searchInput = document.getElementById('searchInput').value;
+var searchInput = document.getElementById('searchInput');
 
-    if (searchInput !== "") {
-        var split_index = searchInput.indexOf("=");
+window.onload = function () {
+    searchInput.focus();
+};
+
+function updateIframe() {
+    var inputValue = searchInput.value;
+
+    if (inputValue !== "") {
+        var split_index = inputValue.indexOf("=");
 
         if (split_index !== -1) {
-            var vid_embed_code = searchInput.slice(split_index + 1, split_index + 12);
-
+            var vid_embed_code = inputValue.slice(split_index + 1, split_index + 12);
             var vid = "https://www.youtube.com/embed/" + vid_embed_code;
 
             console.log(vid);
@@ -25,5 +30,4 @@ function handleKeyPress(event) {
     }
 }
 
-var searchInput = document.getElementById('searchInput');
 searchInput.addEventListener("keypress", handleKeyPress);
